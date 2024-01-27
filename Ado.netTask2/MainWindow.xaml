@@ -1,0 +1,24 @@
+﻿<Window x:Class="Ado.netTask2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ado.netTask2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBox x:Name="txtBox" Width="350" Text="Search By Name"
+                         HorizontalContentAlignment="Center" Foreground="Gray" GotFocus="txtBox_GotFocus"/>
+                <Button x:Name="searchBtn" Width="60" Content="Search" Background="Red" Click="searchBtn_Click"/>
+                <Button x:Name="updateBtn" Margin="20 0 0 0" Width="100" Content="update" Background="Green" Click="updateBtn_Click"/>
+
+            </StackPanel>
+            <DataGrid AutoGenerateColumns="True" x:Name="dataGridView"/>
+
+         
+            
+        </StackPanel>
+    </Grid>
+</Window>
